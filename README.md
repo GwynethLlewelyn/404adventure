@@ -1,6 +1,29 @@
-# Licenses
+# A silly 404 page adventure game
 
-## Colossal Cave Adventure license
+Instead of displaying the usual 'Not found' page, treat your clueless
+visitor with a browser version of the ancient 1976 'Colossal Cave Adventure'
+game instead!
+
+## Installation instructions
+
+Place all the files wherever you wish your 404 page to be. Don't forget the
+fonts under its own directory.
+
+Then you'll have to change the `advent.html` file to whatever your system
+expects it to be. For instance, for an empty directory (e.g. a placeholder for a
+future website), just rename it to `index.html`.
+
+'True' 404 error pages _may_ be possible with your particular choice of webserver;
+if so, you'll need to figure out how these files are written and where they are
+stored.
+
+## Licenses
+
+### My own code
+
+As little there is, it's released under a [BSD-3-Clause LICENSE](https://opensource.org/licenses/BSD-3-Clause).
+
+### Colossal Cave Adventure license
 
 [BSD LICENSE](https://gitlab.com/esr/open-adventure/-/blob/master/COPYING)
 
@@ -38,5 +61,10 @@ Xenoveritas:
   Sadly I have no idea what the license is on the original ADVENT code,
   so I have no idea what licenses are actually available for modified versions.
 
-## Typewriter effect license
+## PixelMix font license
+
+Licensed by Andrew Tyler using a [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 United States (CC BY-NC-ND 3.0 US) License](https://creativecommons.org/licenses/by-nc-nd/3.0/us/),
+as per [the included license](pixelmix/license.txt).
+
+Conversion to WOFF2 Web font with [Google's own freely distributed `woff2` tools](https://github.com/google/woff2).
 
