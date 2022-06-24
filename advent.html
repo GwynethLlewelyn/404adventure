@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>404 Not Found</title>
+		<!-- Do shut up, Firefox. -->
+		<meta charset="UTF-8" />
+		<script>
+			var game; // To make it inspectable.
+			function advent() {
+				var console = document.getElementById("console");
+				// Easy way to empty it:
+				console.innerHTML = "";
+				try {
+					game = new Adventure(console);
+					game.setup();
+					game.start();
+				} catch (ex) {
+					console.appendChild(
+						document.createTextNode(
+							"Whoops, an exception occurred while attempting to enter the cave: " +
+								ex
+						)
+					);
+				}
+			}
+		</script>
+		<style>
+			@font-face {
+				font-family: 'PixelMix';
+				src: url('pixelmix/pixelmix.woff2') format('woff2');
+			}
+			html, body,
+			#console,
+			#console input,
+			noscript, p {
+				color: lime;
+				background-color: black;
+				font-family: PixelMix, "BitStream Vera Sans Mono", monospace;
+				margin: 10px 0 0 10px;
+				font-size: 12pt;
+				line-height: 1.2rem;
+				white-space: pre;
+			}
+			#console input {
+				border-style: none;
+			}
+			p {
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			p a {
+				color: limegreen;	/* very slightly darker */
+				text-decoration: none;
+			}
+			p a:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body onload="advent()">
+		<!--      ........10........20........30........40........50........60........70 -->
+		<noscript>
+			A LARGE BANNER BLOCKS THE WAY. IT READS "JAVASCRIPT IS REQUIRED TO
+			ENTER THE COLOSSAL CAVE. PLEASE ENABLE JAVASCRIPT OR DOWNLOAD A
+			JAVASCRIPT CAPABLE BROWSER."
+		</noscript>
+		<div id="console">Initialising...</div>
+		<!-- Load the scripts at the end so that the initializing banner can be displayed. -->
+		<!--<script src="typewriter.js"></script>-->
+		<script src="advent.js"></script>
+		<script src="advent_save.js"></script>
+		<script src="advent_dat.js"></script>
+	</body>
+</html>
