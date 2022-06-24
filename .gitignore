@@ -38,21 +38,3 @@ package.json
 package-lock.json
 .eslintrc.yml
 .prettierrc.json
-
-# Original LibreMetaverse .gitignore follows
-compile.bat
-*.user
-*.userprefs
-*.suo
-*.cache
-*.pfx
-
-LibreMetaverse/LibreMetaverse.XML
-LibreMetaverse.*.XML
-
-[Oo]bj/
-[Bb]in/
-packages/
-.idea/
-.vs/
-/Programs/examples/TestClient/Properties/launchSettings.json
